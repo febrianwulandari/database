@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 arrayList = databaseHelper.getAllStudentsList();
                 tvnames.setText("");
                 for(String x:arrayList){
-                    tvnames.setText(tvnames.getText().toString()+", "+x);
+                    tvnames.setText(tvnames.getText().toString()+""+x+", ");
 
                 }
             }
